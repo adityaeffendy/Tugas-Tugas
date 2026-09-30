@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Aditya | Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:"Poppins",sans-serif;
+        }
+
+        @keyframes floating{
+
+            0%,100%{
+                transform:translateY(0);
+            }
+
+            50%{
+                transform:translateY(-15px);
+            }
+
+        }
+
+        .floating{
+            animation:floating 4s ease-in-out infinite;
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-slate-50 text-slate-800">
+
+
+<!-- NAVBAR -->
+
+<nav
+class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 px-6 py-5 backdrop-blur-lg md:px-[8%]"
+>
+
+    <div
+    class="mx-auto flex max-w-7xl items-center justify-between"
+    >
+
+        <a
+        href="#home"
+        class="text-2xl font-extrabold"
+        >
+
+            Aditya<span class="text-indigo-600">.</span>
+
+        </a>
+
+
+        <ul
+        class="hidden items-center gap-7 md:flex"
+        >
+
+            <li>
+
+                <a
+                href="#home"
+                class="font-medium transition hover:text-indigo-600"
+                >
+
+                    Home
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                href="#about"
+                class="font-medium transition hover:text-indigo-600"
+                >
+
+                    About
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                href="#skills"
+                class="font-medium transition hover:text-indigo-600"
+                >
+
+                    Skills
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                href="#project"
+                class="font-medium transition hover:text-indigo-600"
+                >
+
+                    Project
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a
+                href="login.html"
+                class="rounded-full bg-indigo-600 px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-indigo-700 hover:shadow-lg"
+                >
+
+                    Login
+
+                </a>
+
+            </li>
+
+        </ul>
+
+
+        <!-- Tombol HP -->
+
+        <a
+        href="#contact"
+        class="rounded-full bg-indigo-600 px-5 py-2 font-semibold text-white md:hidden"
+        >
+
+            Contact
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section
+id="home"
+class="min-h-[calc(100vh-88px)] overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-violet-100 px-6 py-16 md:px-[8%]"
+>
+
+    <div
+    class="mx-auto flex max-w-7xl flex-col-reverse items-center justify-between gap-14 lg:flex-row"
+    >
+
+
+        <!-- TEXT -->
+
+        <div
+        class="w-full text-center lg:w-[55%] lg:text-left"
+        >
+
+            <p
+            class="mb-4 inline-block rounded-full bg-indigo-100 px-5 py-2 font-semibold text-indigo-700"
+            >
+
+                👋 Welcome to My Portfolio
+
+            </p>
+
+
+            <h1
+            class="text-5xl font-extrabold leading-tight sm:text-6xl lg:text-7xl"
+            >
+
+                Wassup!
+
+                <br>
+
+                I'm
+
+                <span
+                class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent"
+                >
+
+                    Aditya
+
+                </span>
+
+            </h1>
+
+
+            <p
+            class="mt-7 text-lg text-slate-600 md:text-xl"
+            >
+
+                Siswa PPLG | Web Designer | Access Student
+
+            </p>
+
+
+            <div
+            class="mt-9 flex justify-center lg:justify-start"
+            >
+
+                <a
+                href="#project"
+                class="rounded-full bg-indigo-600 px-9 py-4 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-indigo-700 hover:shadow-xl"
+                >
+
+                    View Project
+
+                    <i
+                    class="fa-solid fa-arrow-right ml-2"
+                    ></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOTO -->
+
+        <div
+        class="flex w-full justify-center lg:w-[45%]"
+        >
+
+            <div
+            class="floating relative"
+            >
+
+                <div
+                class="absolute -inset-5 rounded-[35px] bg-indigo-500 opacity-20 blur-2xl"
+                ></div>
+
+
+                <img
+                src="assets/adit ganteng.jpeg"
+                alt="Foto Aditya"
+                class="relative h-[400px] w-[300px] rounded-[30px] object-cover object-center shadow-2xl sm:h-[500px] sm:w-[400px]"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section
+id="about"
+class="bg-white px-6 py-24 md:px-[8%]"
+>
+
+    <div
+    class="mx-auto max-w-4xl text-center"
+    >
+
+        <p
+        class="font-bold text-indigo-600"
+        >
+
+            ABOUT ME
+
+        </p>
+
+
+        <h2
+        class="mt-3 text-4xl font-extrabold"
+        >
+
+            About Me, Myself, and I 👋
+
+        </h2>
+
+
+        <p
+        class="mt-8 text-lg leading-9 text-slate-600"
+        >
+
+            Aku adalah seorang anak yang hidup dan berjuang
+            untuk menjadi orang kaya, tapi malah memilih salah
+            satu jurusan tersusah di muka bumi.
+
+            <br><br>
+
+            Berasal dari SMK Cinta Kasih Tzu Chi kelas
+            XII PPLG 1 dan bermimpi menjadi seorang
+            Cybersecurity Expert.
+
+            <br><br>
+
+            Tapi saya masih belajar dan belum jago hehe
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section
+id="skills"
+class="bg-slate-100 px-6 py-24 md:px-[8%]"
+>
+
+    <div
+    class="mx-auto max-w-7xl"
+    >
+
+        <div
+        class="text-center"
+        >
+
+            <p
+            class="font-bold text-indigo-600"
+            >
+
+                MY ABILITIES
+
+            </p>
+
+
+            <h2
+            class="mt-3 text-4xl font-extrabold"
+            >
+
+                My Skills 💡
+
+            </h2>
+
+        </div>
+
+
+        <div
+        class="mt-14 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4"
+        >
+
+
+            <!-- EDITING -->
+
+            <div
+            class="rounded-[25px] bg-white p-8 text-center shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
+            >
+
+                <i
+                class="fa-solid fa-film text-6xl text-indigo-600"
+                ></i>
+
+
+                <h3
+                class="mt-6 text-xl font-bold"
+                >
+
+                    Video Editing
+
+                </h3>
+
+
+                <p
+                class="mt-3 text-sm leading-6 text-slate-500"
+                >
+
+                    Mengedit video pendek untuk media sosial
+                    dan konten digital.
+
+                </p>
+
+            </div>
+
+
+            <!-- HTML -->
+
+            <div
+            class="rounded-[25px] bg-white p-8 text-center shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
+            >
+
+                <i
+                class="fa-brands fa-html5 text-6xl text-orange-500"
+                ></i>
+
+
+                <h3
+                class="mt-6 text-xl font-bold"
+                >
+
+                    HTML
+
+                </h3>
+
+
+                <p
+                class="mt-3 text-sm leading-6 text-slate-500"
+                >
+
+                    Membuat struktur website yang rapi
+                    dan mudah dipahami.
+
+                </p>
+
+            </div>
+
+
+            <!-- CSS -->
+
+            <div
+            class="rounded-[25px] bg-white p-8 text-center shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
+            >
+
+                <i
+                class="fa-brands fa-css3-alt text-6xl text-blue-600"
+                ></i>
+
+
+                <h3
+                class="mt-6 text-xl font-bold"
+                >
+
+                    CSS
+
+                </h3>
+
+
+                <p
+                class="mt-3 text-sm leading-6 text-slate-500"
+                >
+
+                    Mendesain website yang modern,
+                    responsif, dan menarik.
+
+                </p>
+
+            </div>
+
+
+            <!-- DESIGNER -->
+
+            <div
+            class="rounded-[25px] bg-white p-8 text-center shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
+            >
+
+                <i
+                class="fa-solid fa-palette text-6xl text-violet-600"
+                ></i>
+
+
+                <h3
+                class="mt-6 text-xl font-bold"
+                >
+
+                    Designer
+
+                </h3>
+
+
+                <p
+                class="mt-3 text-sm leading-6 text-slate-500"
+                >
+
+                    Mendesain UI website, banner,
+                    dan kebutuhan visual lainnya.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECT -->
+
+<section
+id="project"
+class="bg-white px-6 py-24 md:px-[8%]"
+>
+
+    <div
+    class="mx-auto max-w-6xl"
+    >
+
+        <div
+        class="text-center"
+        >
+
+            <p
+            class="font-bold text-indigo-600"
+            >
+
+                MY WORK
+
+            </p>
+
+
+            <h2
+            class="mt-3 text-4xl font-extrabold"
+            >
+
+                Projects 🚀
+
+            </h2>
+
+        </div>
+
+
+        <div
+        class="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2"
+        >
+
+
+            <!-- CLIPPER -->
+
+            <a
+            href="https://www.tiktok.com/@ihaevenonameinhere"
+            target="_blank"
+            class="group rounded-[30px] bg-slate-50 p-10 text-center shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
+            >
+
+                <i
+                class="fa-brands fa-tiktok text-6xl text-slate-900"
+                ></i>
+
+
+                <h3
+                class="mt-6 text-2xl font-bold"
+                >
+
+                    Clipper JDI
+
+                </h3>
+
+
+                <p
+                class="mt-3 text-slate-500"
+                >
+
+                    Membuat dan mengedit konten video
+                    untuk TikTok.
+
+                </p>
+
+
+                <p
+                class="mt-6 font-semibold text-indigo-600"
+                >
+
+                    Open TikTok
+
+                    <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-2"
+                    ></i>
+
+                </p>
+
+            </a>
+
+
+            <!-- VIDEO LOMBA -->
+
+            <a
+            href="https://www.instagram.com/reel/DXmDewXE3LS/?utm_source=ig_web_copy_link"
+            target="_blank"
+            class="group rounded-[30px] bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 p-10 text-center text-white shadow-lg transition duration-300 hover:-translate-y-3 hover:shadow-2xl"
+            >
+
+                <i
+                class="fa-brands fa-instagram text-6xl"
+                ></i>
+
+
+                <h3
+                class="mt-6 text-2xl font-bold"
+                >
+
+                    Video Lomba
+
+                </h3>
+
+
+                <p
+                class="mt-3 text-white/80"
+                >
+
+                    Video kreatif yang dibuat untuk
+                    mengikuti perlombaan.
+
+                </p>
+
+
+                <p
+                class="mt-6 font-semibold"
+                >
+
+                    Open Instagram
+
+                    <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-2"
+                    ></i>
+
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section
+id="experience"
+class="bg-slate-100 px-6 py-24 md:px-[8%]"
+>
+
+    <div
+    class="mx-auto max-w-5xl"
+    >
+
+        <div
+        class="text-center"
+        >
+
+            <p
+            class="font-bold text-indigo-600"
+            >
+
+                WORK EXPERIENCE
+
+            </p>
+
+
+            <h2
+            class="mt-3 text-4xl font-extrabold"
+            >
+
+                Pengalaman 💼
+
+            </h2>
+
+        </div>
+
+
+        <div
+        class="mt-14 rounded-[30px] bg-white p-8 shadow-xl md:p-12"
+        >
+
+            <div
+            class="flex flex-col gap-7 md:flex-row"
+            >
+
+                <div
+                class="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-indigo-600"
+                >
+
+                    <i
+                    class="fa-solid fa-building text-4xl text-white"
+                    ></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3
+                    class="text-2xl font-bold"
+                    >
+
+                        PT Saint Technologies Indonesia
+
+                    </h3>
+
+
+                    <p
+                    class="mt-2 font-semibold text-indigo-600"
+                    >
+
+                        Praktik Kerja Lapangan (PKL)
+
+                    </p>
+
+
+                    <p
+                    class="mt-6 leading-8 text-slate-600"
+                    >
+
+                        Selama menjalani Praktik Kerja Lapangan
+                        di PT Saint Technologies Indonesia,
+                        saya dipercaya membantu pekerjaan
+                        di bidang digital dan operasional kantor.
+
+                    </p>
+
+
+                    <ul
+                    class="mt-6 space-y-4 text-slate-600"
+                    >
+
+                        <li>
+                            ✅ Mendesain tampilan website sebagai
+                            <strong>Web Designer</strong>.
+                        </li>
+
+                        <li>
+                            ✅ Membuat dan mengedit konten video
+                            sebagai <strong>Clipper</strong>.
+                        </li>
+
+                        <li>
+                            ✅ Mendesain aset visual untuk
+                            media sosial.
+                        </li>
+
+                        <li>
+                            ✅ Membantu operasional kantor,
+                            termasuk mengganti dan mengangkat galon.
+                        </li>
+
+                        <li>
+                            ✅ Bekerja sama dengan tim untuk
+                            menyelesaikan tugas sesuai target.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRESTASI -->
+
+<section
+id="prestasi"
+class="bg-white px-6 py-24 md:px-[8%]"
+>
+
+    <div
+    class="mx-auto max-w-5xl"
+    >
+
+        <div
+        class="text-center"
+        >
+
+            <p
+            class="font-bold text-indigo-600"
+            >
+
+                ACHIEVEMENTS
+
+            </p>
+
+
+            <h2
+            class="mt-3 text-4xl font-extrabold"
+            >
+
+                Prestasi 🏆
+
+            </h2>
+
+        </div>
+
+
+        <div
+        class="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2"
+        >
+
+
+            <!-- ACCESS -->
+
+            <div
+            class="rounded-[30px] bg-gradient-to-br from-indigo-600 to-violet-600 p-10 text-center text-white shadow-xl"
+            >
+
+                <i
+                class="fa-solid fa-graduation-cap text-6xl"
+                ></i>
+
+
+                <h3
+                class="mt-6 text-2xl font-bold"
+                >
+
+                    Access Student
+
+                </h3>
+
+
+                <p
+                class="mt-4 leading-7 text-indigo-100"
+                >
+
+                    Menjadi bagian dari Access Scholarship
+                    Program di Universitas Kristen Krida Wacana
+                    atau UKRIDA.
+
+                </p>
+
+            </div>
+
+
+            <!-- TOEFL -->
+
+            <div
+            class="rounded-[30px] bg-slate-100 p-10 text-center shadow-xl"
+            >
+
+                <i
+                class="fa-solid fa-language text-6xl text-indigo-600"
+                ></i>
+
+
+                <h3
+                class="mt-6 text-2xl font-bold"
+                >
+
+                    TOEFL
+
+                </h3>
+
+
+                <p
+                class="mt-4 leading-7 text-slate-500"
+                >
+
+                    Mengikuti dan menyelesaikan
+                    tes TOEFL di UKRIDA.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section
+id="contact"
+class="bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-24 text-center text-white"
+>
+
+    <h2
+    class="text-4xl font-extrabold"
+    >
+
+        Let's Connect! 🚀
+
+    </h2>
+
+
+    <p
+    class="mx-auto mt-5 max-w-xl text-indigo-100"
+    >
+
+        Terima kasih sudah mengunjungi portofolio saya.
+
+    </p>
+
+
+    <a
+    href="mailto:emailkamu@gmail.com"
+    class="mt-8 inline-block rounded-full bg-white px-8 py-4 font-bold text-indigo-600 transition hover:-translate-y-1 hover:shadow-xl"
+    >
+
+        <i class="fa-solid fa-envelope mr-2"></i>
+
+        Contact Me
+
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer
+class="bg-slate-950 py-8 text-center text-slate-400"
+>
+
+    <p>
+
+        Made with
+
+        <span class="text-red-500">555</span>
+
+        by
+
+        <strong class="text-white">
+
+            Aditya
+
+        </strong>
+
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
